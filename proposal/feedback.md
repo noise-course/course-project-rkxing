@@ -1,0 +1,3 @@
+## Feedback
+
+This is a solid malware-classification reproduction project. For the experiments, the two most important technical checks will be ensuring that your **flow extraction matches the NetML malware pipeline** (same sessionization rules, timeouts, and bidirectional merging), since even small deviations change the label distribution and model accuracy, and confirming that your **feature preprocessing matches what the leaderboard models expect**, especially for algorithms sensitive to scale like logistic regression or MLP. With those aligned, reproducing the published results should be straightforward and any improvements you see will be meaningful.
